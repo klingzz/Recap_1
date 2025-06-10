@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danish Grammar Exercise</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #f5f5f5;
+        line-height: 1.6;
+      }
+
+      .container {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+
+      .context {
+        font-style: italic;
+        color: #666;
+        margin-bottom: 5px;
+        font-size: 14px;
+      }
+
+      .sentence {
+        font-size: 16px;
+        margin: 15px 0 25px 0;
+        padding: 15px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        border-left: 4px solid #3498db;
+      }
+
+      .conjugation-table {
+        margin: 15px 0;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        padding: 15px;
+        border-left: 4px solid #e74c3c;
+      }
+
+      .conjugation-row {
+        margin: 8px 0;
+        font-family: "Courier New", monospace;
+        font-size: 15px;
+      }
+
+      .group-title {
+        font-weight: bold;
+        color: #e74c3c;
+        margin: 20px 0 10px 0;
+        font-size: 16px;
+      }
+
+      .blank-input {
+        padding: 6px 10px;
+        border: 2px solid #ddd;
+        border-radius: 4px;
+        font-size: 14px;
+        min-width: 70px;
+        text-align: center;
+        transition: all 0.3s ease;
+        font-family: inherit;
+      }
+
+      .blank-input:focus {
+        outline: none;
+        border-color: #007bff;
+      }
+
+      .correct {
+        background-color: #d4edda !important;
+        border-color: #28a745 !important;
+        color: #155724;
+      }
+
+      .incorrect {
+        background-color: #f8d7da;
+        border-color: #dc3545;
+        color: #721c24;
+      }
+
+      .instructions {
+        background-color: #e7f3ff;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        border-left: 4px solid #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Danish Grammar Exercise</h1>
+
+      <div class="instructions">
+        <strong>Instructions:</strong> Setze das richtige Wort in den Boxen ein,
+        die Felder werden grün falls das richtige Wort eingesetzt wurde.
+      </div>
+
+      <h2>Personalpronomen</h2>
+
+      <div class="context">"Ich heiße Sarah"</div>
+      <div class="sentence">
+        <input
+          type="text"
+          class="blank-input"
+          data-answer="jeg"
+          placeholder="___"
+        />
+        hedder Sarah
+      </div>
+
+      <div class="context">"Wie heißt du?"</div>
+      <div class="sentence">
+        <input
+          type="text"
+          class="blank-input"
+          data-answer="hvad"
+          placeholder="___"
+        />
+        hedder du?
+      </div>
+
+      <div class="context">"Nun werde ich dich herumführen"</div>
+      <div class="sentence">
+        Nu skal
+        <input
+          type="text"
+          class="blank-input"
+          data-answer="jeg"
+          placeholder="___"
+        />
+        vise
+        <input
+          type="text"
+          class="blank-input"
+          data-answer="dig"
+          placeholder="___"
+        />
+        rundt.
+      </div>
+
+      <div class="context">"Sie hat eine Verabredung mit ihm"</div>
+      <div class="sentence">
+        <input
+          type="text"
+          class="blank-input"
+          data-answer="hun"
+          placeholder="___"
+        />
+        har en aftale med
+        <input
+          type="text"
+          class="blank-input"
+          data-answer="ham"
+          placeholder="___"
+        />.
+      </div>
+
+      <div class="context">"Er kommt in zehn Minuten"</div>
+      <div class="sentence">
+        <input
+          type="text"
+          class="blank-input"
+          data-answer="han"
+          placeholder="___"
+        />
+        kommer i ti minutter.
+      </div>
+
+      <div class="context">"Wir sehen uns später"</div>
+      <div class="sentence">
+        <input
+          type="text"
+          class="blank-input"
+          data-answer="vi"
+          placeholder="___"
+        />
+        ses senere
+      </div>
+
+      <h2>Possessivpronomen</h2>
+
+      <div class="context">
+        "Das sind meine alten Möbel welche in der Lounge stehen."
+      </div>
+      <div class="sentence">
+        Det er
+        <input
+          type="text"
+          class="blank-input"
+          data-answer="mine"
+          placeholder="___"
+        />
+        gamle møbler, der står i loungen.
+      </div>
+
+      <div class="context">
+        "Anna zog in mein Haus ein nachdem meine Frau starb."
+      </div>
+      <div class="sentence">
+        Anna flyttede ind i
+        <input
+          type="text"
+          class="blank-input"
+          data-answer="mit"
+          placeholder="___"
+        />
+        hus, efter at
+        <input
+          type="text"
+          class="blank-input"
+          data-answer="min"
+          placeholder="___"
+        />
+        kone døde.
+      </div>
+
+      <div class="context">"Ich freue mich meine Sachen hier zu sehen."</div>
+      <div class="sentence">
+        Jeg er glad for at se
+        <input
+          type="text"
+          class="blank-input"
+          data-answer="mine"
+          placeholder="___"
+        />
+        ting i Morfars Hostel.
+      </div>
+
+      <div class="context">"Hat sein Fahrrad schon wieder einen Platten?"</div>
+      <div class="sentence">
+        Er
+        <input
+          type="text"
+          class="blank-input"
+          data-answer="hans"
+          placeholder="___"
+        />
+        cykel punkteret igen?
+      </div>
+
+      <div class="context">"Kommt ihr zu unserer Eröffnungsfeier"</div>
+      <div class="sentence">
+        Anna: Kommer
+        <input
+          type="text"
+          class="blank-input"
+          data-answer="i"
+          placeholder="___"
+        />
+        til
+        <input
+          type="text"
+          class="blank-input"
+          data-answer="vores"
+          placeholder="___"
+        />
+        åbningsfest?
+      </div>
+
+      <div class="context">
+        "Anna und Frederik veranstalten ein Eröffnungsfest für ihre Freunde und
+        Geschäftsverbindungen"
+      </div>
+      <div class="sentence">
+        Anna og Frederik holder åbningsfest for
+        <input
+          type="text"
+          class="blank-input"
+          data-answer="deres"
+          placeholder="___"
+        />
+        venner og forretningsforbindelser.
+      </div>
+
+      <div class="context">"Habt ihr eure Freunde zum fest eingeladen?"</div>
+      <div class="sentence">
+        Jørgen: Har i inviteret
+        <input
+          type="text"
+          class="blank-input"
+          data-answer="jeres"
+          placeholder="___"
+        />
+        venner til festen?
+      </div>
+
+      <h2>Verben</h2>
+
+      <div class="conjugation-table">
+        <div class="group-title">Gruppe 1:</div>
+        <div class="conjugation-row">
+          at arbejde — jeg
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="arbejder"
+            placeholder="___"
+          />
+          — jeg
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="arbejdede"
+            placeholder="___"
+          />
+          — jeg har
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="arbejdet"
+            placeholder="___"
+          />
+        </div>
+        <div class="conjugation-row">
+          at vente — jeg
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="venter"
+            placeholder="___"
+          />
+          — jeg
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="ventede"
+            placeholder="___"
+          />
+          — jeg har
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="ventet"
+            placeholder="___"
+          />
+        </div>
+        <div class="conjugation-row">
+          at
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="lave"
+            placeholder="___"
+          />
+          — jeg laver — jeg
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="lavede"
+            placeholder="___"
+          />
+          — jeg har
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="lavet"
+            placeholder="___"
+          />
+        </div>
+        <div class="conjugation-row">
+          at bo — jeg bor — jeg
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="boede"
+            placeholder="___"
+          />
+          — jeg har
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="boet"
+            placeholder="___"
+          />
+        </div>
+      </div>
+
+      <div class="conjugation-table">
+        <div class="group-title">Gruppe 2:</div>
+        <div class="conjugation-row">
+          at tale — jeg
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="taler"
+            placeholder="___"
+          />
+          — jeg talte — jeg har
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="talt"
+            placeholder="___"
+          />
+        </div>
+        <div class="conjugation-row">
+          at
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="vise"
+            placeholder="___"
+          />
+          — jeg viser — jeg
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="viste"
+            placeholder="___"
+          />
+          — jeg har
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="vist"
+            placeholder="___"
+          />
+        </div>
+        <div class="conjugation-row">
+          at
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="begynde"
+            placeholder="___"
+          />
+          — jeg
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="begynder"
+            placeholder="___"
+          />
+          — jeg begyndte — jeg er
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="begyndt"
+            placeholder="___"
+          />
+        </div>
+      </div>
+
+      <div class="conjugation-table">
+        <div class="group-title">Gruppe 3:</div>
+        <div class="conjugation-row">
+          at være — jeg
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="er"
+            placeholder="___"
+          />
+          — jeg
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="var"
+            placeholder="___"
+          />
+          — jeg har
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="været"
+            placeholder="___"
+          />
+        </div>
+        <div class="conjugation-row">
+          at have — jeg
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="har"
+            placeholder="___"
+          />
+          — jeg
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="havde"
+            placeholder="___"
+          />
+          — jeg har haft
+        </div>
+        <br />
+        <div class="conjugation-row">
+          at kunne — jeg
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="kan"
+            placeholder="___"
+          />
+          — jeg
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="kunne"
+            placeholder="___"
+          />
+          — jeg har
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="kunnet"
+            placeholder="___"
+          />
+        </div>
+        <div class="conjugation-row">
+          at
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="skulle"
+            placeholder="___"
+          />
+          — jeg skal — jeg skulle — jeg har
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="skullet"
+            placeholder="___"
+          />
+        </div>
+        <div class="conjugation-row">
+          at
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="ville"
+            placeholder="___"
+          />
+          — jeg vil — jeg
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="ville"
+            placeholder="___"
+          />
+          — jeg har
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="villet"
+            placeholder="___"
+          />
+        </div>
+        <div class="conjugation-row">
+          at
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="måtte"
+            placeholder="___"
+          />
+          — jeg
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="må"
+            placeholder="___"
+          />
+          — jeg
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="måtte"
+            placeholder="___"
+          />
+          — jeg har måttet
+        </div>
+      </div>
+
+      <h2>Substantive</h2>
+
+      <div class="conjugation-table">
+        <div class="group-title">Gruppe 1:</div>
+        <div class="conjugation-row">
+          en fest —
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="festen"
+            placeholder="___"
+          />
+          — fester — festerne
+        </div>
+        <div class="conjugation-row">
+          en kop —
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="koppen"
+            placeholder="___"
+          />
+          — kopper —
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="kopperne"
+            placeholder="___"
+          />
+        </div>
+        <div class="conjugation-row">
+          et værelse —
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="værelset"
+            placeholder="___"
+          />
+          — værelser —
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="værelserne"
+            placeholder="___"
+          />
+        </div>
+        <div class="conjugation-row">
+          en
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="kode"
+            placeholder="___"
+          />
+          —
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="koden"
+            placeholder="___"
+          />
+          — koder —
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="koderne"
+            placeholder="___"
+          />
+        </div>
+      </div>
+
+      <div class="conjugation-table">
+        <div class="group-title">Gruppe 2:</div>
+        <div class="conjugation-row">
+          en stol —
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="stolen"
+            placeholder="___"
+          />
+          — stole —
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="stolene"
+            placeholder="___"
+          />
+        </div>
+        <div class="conjugation-row">
+          en skov —
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="skoven"
+            placeholder="___"
+          />
+          —
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="skove"
+            placeholder="___"
+          />
+          —
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="skovene"
+            placeholder="___"
+          />
+        </div>
+        <div class="conjugation-row">
+          et
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="hus"
+            placeholder="___"
+          />
+          — huset —
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="huse"
+            placeholder="___"
+          />
+          —
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="husene"
+            placeholder="___"
+          />
+        </div>
+      </div>
+
+      <div class="conjugation-table">
+        <div class="group-title">Gruppe 3:</div>
+        <div class="conjugation-row">
+          en ting —
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="tingen"
+            placeholder="___"
+          />
+          — ting — tingene
+        </div>
+        <div class="conjugation-row">
+          et tal —
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="tallet"
+            placeholder="___"
+          />
+          —
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="tal"
+            placeholder="___"
+          />
+          — tallene
+        </div>
+        <div class="conjugation-row">
+          et
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="ben"
+            placeholder="___"
+          />
+          — benet —
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="ben"
+            placeholder="___"
+          />
+          —
+          <input
+            type="text"
+            class="blank-input"
+            data-answer="benene"
+            placeholder="___"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Get all input elements
+      const inputs = document.querySelectorAll(".blank-input");
+
+      // Add event listener to each input
+      inputs.forEach((input) => {
+        input.addEventListener("input", function () {
+          const userAnswer = this.value.toLowerCase().trim();
+          const correctAnswer = this.getAttribute("data-answer").toLowerCase();
+
+          // Remove previous classes
+          this.classList.remove("correct", "incorrect");
+
+          if (userAnswer === "") {
+            // No input, show default state
+            return;
+          } else if (userAnswer === correctAnswer) {
+            // Correct answer
+            this.classList.add("correct");
+          } else {
+            // Incorrect answer
+            this.classList.add("incorrect");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
